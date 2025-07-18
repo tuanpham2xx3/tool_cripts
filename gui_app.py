@@ -10,11 +10,16 @@ import threading
 import time
 import os
 from macro_recorder import MacroRecorder
+try:
+    from version import __version__, APP_NAME
+except ImportError:
+    __version__ = "1.0.0"
+    APP_NAME = "Macro Recorder Tool"
 
 class MacroRecorderGUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("🎯 Macro Recorder Tool")
+        self.root.title(f"🎯 {APP_NAME} v{__version__}")
         self.root.geometry("1000x550")
         
         # Tạo recorder instance
@@ -60,7 +65,7 @@ class MacroRecorderGUI:
         self.canvas_window = self.canvas.create_window((0, 0), window=main_frame, anchor="nw")
         
         # Title
-        title_label = ttk.Label(main_frame, text="🎯 MACRO RECORDER TOOL", 
+        title_label = ttk.Label(main_frame, text=f"🎯 {APP_NAME.upper()} v{__version__}", 
                                font=('Arial', 16, 'bold'))
         title_label.grid(row=0, column=0, columnspan=4, pady=(0, 20))
         

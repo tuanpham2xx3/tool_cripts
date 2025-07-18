@@ -1,39 +1,59 @@
-# Screenshot folder
-SCREENSHOT/
-screenshot_*.png
-
-# Macro files (user generated)
-macro_*.json
-
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
-
-# Virtual environments
-venv/
+.Python
 env/
+venv/
 ENV/
+env.bak/
+venv.bak/
 
-# IDE files
+# PyInstaller
+build/
+dist/
+*.spec
+*.exe
+*.msi
+
+# Build artifacts
+installer/
+app_icon.ico
+*.log
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Log files
-*.log
-
 # Temporary files
 *.tmp
 *.temp
+temp/
+tmp/
 
-# GUI cache files
-*.pycache
-*.pyc 
+# Backup files
+*.bak
+*.orig
+
+# Screenshots (các file test)
+SCREENSHOT/
+*.png
+*.jpg
+*.jpeg
+
+# Macro files (user data)
+*.json
+!example_macro.json
+!requirements.txt
+!package.json
+
+# Windows specific
+*.lnk 

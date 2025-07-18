@@ -242,14 +242,32 @@ pip install -r requirements.txt
 - Đảm bảo có đủ dung lượng ổ cứng
 - Folder SCREENSHOT sẽ được tạo tự động
 
-## 📦 Build Executable (Tùy chọn)
+## 📦 Build Executable cho Windows
 
-Tạo file .exe độc lập:
+### 🚀 Cách nhanh nhất (khuyên dùng):
 
-```bash
-pip install pyinstaller
-pyinstaller --onefile --windowed main.py
+**Windows - Click đúp:**
+```batch
+build_exe.bat
 ```
+
+**Manual:**
+```bash
+python build_exe.py
+```
+
+### 📋 Yêu cầu:
+- Python 3.7+ 
+- Windows 10/11
+- Internet connection
+
+### 📊 Kết quả:
+- **File EXE**: `dist/MacroRecorderTool.exe` (~25-40MB)
+- **Installer**: `installer/MacroRecorderTool_Setup.exe` (tùy chọn)
+- **Standalone**: Không cần cài Python
+
+### 📖 Hướng dẫn chi tiết:
+Xem file `BUILD_GUIDE.md` để biết thêm options và troubleshooting.
 
 ## 🤝 Đóng góp
 
