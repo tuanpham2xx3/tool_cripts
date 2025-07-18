@@ -1,0 +1,39 @@
+# Screenshot folder
+SCREENSHOT/
+screenshot_*.png
+
+# Macro files (user generated)
+macro_*.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# GUI cache files
+*.pycache
+*.pyc 
